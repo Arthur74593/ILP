@@ -10,7 +10,8 @@ soma_pequeno = 0
 soma_medio = 0
 soma_grande = 0
 
-for i in range(1,n+1):
+for indice in range(n):
+    i = float(input())
     if i < 10:
         soma_pequeno += 1
     elif i < 100:
@@ -20,6 +21,6 @@ for i in range(1,n+1):
 print(f'Soma pequeno:{soma_pequeno}')
 print(f'Soma media:{soma_medio}')
 print(f'Soma grande:{soma_grande}')
-# kcjsdhvrsgv
+
 
 

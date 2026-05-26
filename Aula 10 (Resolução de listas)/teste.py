@@ -1,14 +1,20 @@
-print("C  F  K  Classificação")
+from tabulate import tabulate 
 
-for c in range(0, 101, 10):
-    f = c * 9/5 + 32
+dados = []
+c = 0
+
+while c <= 100:
+    f = (c * 1.8) + 32
     k = c + 273.15
-
+    
     if c < 15:
-        clas = "Fria"
+        classificação = 'fria'
     elif c <= 25:
-        clas = "Agradável"
+        classificação = 'agradável'
     else:
-        clas = "Quente"
+        classificação = 'quente'
 
-    print(f"{c:<3} {f:<5.1f} {k:<7.2f} {clas}")
+    dados.append([c, f, k, classificação])
+
+    c += 10
+print(tabulate(dados, headers=['Celsius', 'Fahrenheit', 'Kelvin', 'Classificação'], tablefmt ='grid'))

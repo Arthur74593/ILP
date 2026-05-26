@@ -8,22 +8,25 @@
 # 10	50.0	283.15	fria
 # ...	...	...	...
 # Fórmulas: F = C × 9/5 + 32 ; K = C + 273.15
-
+from tabulate import tabulate 
 c = 0
+dados = []
 
-print("Celsius Farenheit kelvin Classificação")
 
 while c <100:
     c += 10
     f = c*9/5 + 32
     k = c + 273.15
+    
     if c <15:
         clas = "Fria"
     elif c <= 25:
         clas = "Agradável"
     else:
         clas = "Quente"
+    dados.append([c,f,k, clas])
 
-    print(c,f,k,clas) 
+
+print(tabulate(dados,headers=['Celsius','Farenheit','Kelvin','CLassificação'], tablefmt='grid'))
 
 

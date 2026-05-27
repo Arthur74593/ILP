@@ -19,7 +19,7 @@ for x in a:
             esta_em_b = True
             break
     
-    if esta_em_b and x not in resultado:
+    if not esta_em_b and x not in resultado:
         resultado.append(x)
 
 if resultado:

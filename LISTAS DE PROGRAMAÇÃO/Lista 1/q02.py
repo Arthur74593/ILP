@@ -1,10 +1,20 @@
-n = int(input("Quantidade de números a serem lidos:"))
+n = int(input("Quantos valores lista ter vai:"))
+itens = input().split()
+lista = [int(item) for item in itens]
+soma = 0
+for numero in lista:
+    soma += numero
+
+print(soma)                                                                                                                                                                        n = int(input("Quantos valores lista ter vai:"))
+
+
+
 lista = []
 
-for i in range(n):
-    num = int(input(f'valor:'))
-    lista.append(num)
-    maior = max(lista)
-    menor = min(lista)
-
-print(f"{menor} {maior}")
+for item in range(n):
+    valor = int(input("valor:"))
+    lista.append(valor)
+soma = 0
+for valores in lista:
+    soma += valores
+print(soma)  

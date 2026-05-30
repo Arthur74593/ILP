@@ -2,12 +2,10 @@
 # e mostrar o resultado final. Para resolver, percorra a lista inteira e acumule a soma em uma variável.
 
 n = int(input("Quantos valores lista ter vai:"))
-lista = []
-
-for item in range(n):
-    valor = int(input("valor:"))
-    lista.append(valor)
+itens = input().split()
+lista = [int(item) for item in itens]
 soma = 0
-for valores in lista:
-    soma += valores
-print(soma) 
+for numero in lista:
+    soma += numero
+
+print(soma)  

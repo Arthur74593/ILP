@@ -1,14 +1,13 @@
-n = int(input("quantidade de valores a serem lidos:"))
-lista = []
+numero = int(input("Quantidade de números na lista:"))
+lista = list(map(int, input("Digite o números separados por espaço:").split()))
+x = int(input("Digite um número que pode , ou não, estar na lista:"))
 
-for i in range(n):
-    num = int(input("Digite o valor:"))
-    lista.append(num)
-
-x =  int(input("Digite um valor que pode, ou não, estar na lista:"))
- 
-if x in lista:
-    ultima_posicao = len(lista) -  1 - lista[::-1].index(x)
-    print(ultima_posicao)
+for i in range(len(lista) -1 ,-1 ,-1):
+    if lista[i] == x:
+        print(i)
+        break
 else:
-    print("-1")
+    print(-1)
+
+
+    

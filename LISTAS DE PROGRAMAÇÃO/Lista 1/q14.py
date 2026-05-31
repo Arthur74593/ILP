@@ -1,11 +1,8 @@
-n = int(input("quantidade de valores a serem lidos:"))
-lista = []
+numero = int(input("Quantidade de números na lista:"))
+lista = list(map(int, input("Digite o números separados por espaço:").split()))
 
-for i in range(n):
-    num = int(input("Digite o valor:"))
-    lista.append(num)
 for i in range(len(lista)):
-   if lista[i] % 2 == 0:
-    lista[i]  = 2*lista[i]
-
-print(lista)
+    if lista[i] % 2 == 0:
+        lista[i] = lista[i] * 2
+        
+print(*lista)

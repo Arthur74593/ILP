@@ -1,9 +1,10 @@
-n = int(input("Quantidade de valores a serem lidos:"))
-lista = []
+numero = int(input("Quantidade de números na lista"))
+lista = list(map(int, input("Digite o números separados por espaço:").split()))
 pares = 0
-for i in range(n):
-    num = int(input("valor:"))
-    lista.append(num)
+for num in lista:
     if num % 2 == 0:
         pares += 1
+
 print(pares)
+
+    

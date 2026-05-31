@@ -1,16 +1,14 @@
-n = int(input("quantidade de valores a serem lidos:"))
-lista = []
-acima = 0
+numero = int(input("Quantidade de números na lista"))
+lista = list(map(int, input("Digite o números separados por espaço:").split()))
 
-for i in range(n):
-    num = int(input("Digite o valor:"))
-    lista.append(num)
-    soma = sum(lista)
-    media = soma/n
+qtd_maior_media = 0
+soma = 0
+qtd = len(lista)
+
+for num in lista:
+    soma += num
+    media = soma / qtd
 if num > media:
-    acima += 1 
-    
+    qtd_maior_media += 1
 
-print(acima)
-print(media)
-print(lista)
+print(qtd_maior_media)

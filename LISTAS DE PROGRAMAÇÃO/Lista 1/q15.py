@@ -1,15 +1,13 @@
-n = int(input("quantidade de valores a serem lidos:"))
-lista = []
+def ja_existe(valor, lista):
+    return valor in lista
 
-for i in range(n):
-    num = int(input("Digite o valor:"))
-    lista.append(num)
+numero = int(input("Quantidade de números na lista:"))
+lista = list(map(int, input("Digite o números separados por espaço:").split()))
 
-nova_lista = []
+nova = []
+
 for num in lista:
-    if num not in nova_lista:
-        nova_lista.append(num)
+    if not ja_existe(num, nova):
+        nova.append(num)
 
-print(nova_lista)  
-
-
+print(*nova)

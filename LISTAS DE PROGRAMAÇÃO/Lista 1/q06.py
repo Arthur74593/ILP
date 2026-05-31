@@ -1,12 +1,6 @@
-n = int(input("quantidade de valores a serem lidos:"))
-lista = []
+numero = int(input("Quantidade de números na lista:"))
+lista = list(map(int, input("Digite o números separados por espaço:").split()))
 
-for i in range(n):
-    num = int(input("Digite o valor:"))
-    lista.append(num)
+lista.append(lista.pop(0))
 
-if len(lista) > 1:
-    primeiro  = lista.pop(0)
-    lista.append(primeiro)
-
-print(lista)
+print(*lista)

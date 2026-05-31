@@ -1,9 +1,5 @@
-n = int(input("quantidade de valores a serem lidos:"))
-lista = []
+numero = int(input("Quantidade de números na lista"))
+lista = list(map(int, input("Digite o números separados por espaço:").split()))
+lista_inversa = lista[::-1]
 
-for i in range(n):
-    num = int(input("Digite o valor:"))
-    lista.append(num)
-    lista_invertida = lista[::-1]
-
-print(lista_invertida)
+print(*lista_inversa)

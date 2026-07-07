@@ -22,4 +22,3 @@ for num in contagem:
             moda = num
 
 print(moda)
-        

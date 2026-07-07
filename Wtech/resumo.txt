@@ -1,0 +1,54 @@
+tecnologias mudam -> devemos nos atualizar e buscar conhecê-las
+
+Processo de aprendizagem -> receber as informações, analisá-las e depois gerar saídas com elas
+	- Mas por quanto tempo nosso cérebro guarda essas informações
+
+1. Como eu reajo às mudanças tecnológicas?
+2. Como o cérebro aprende?
+
+	--> Aprender também tem suas dores (paciência, estratégia, disposição)
+		- Não basta apenas se expor ao conteúdo;
+		- Aprender requer esforço mental, energia;
+		- É necessário desenvolver um plano de estudo, como uma carreira;
+
+Design Thinking -> Nos ajuda a resolver um problema de forma organizada e prática, dividindo o processo em etapas
+	- Definição
+	- Idealização
+	- Prototipagem (produzir protótipos)
+	- Teste
+	- Reformulação
+
+Existem outras ferramentas para solução de problemas
+	-> Duplo diamante (utilizado para trabalho em equipe)
+		- Descobrir (encontrar e entender o problema)
+		- Definir (encontrar uma solução do problema)
+		- Desenvolver (construir a solução)
+		- Testar (realizar testes com a ferramenta construída)
+
+Todo método de solucionar problemas trabalha em cima de um ciclo
+	- Encontrar o problema;
+	- Construir uma solução;
+	- Testar a solução construída;
+	- Refazer;
+
+
+PALESTRA SOBRE BANCOS DE DADOS
+
+Bancos de dados estão presentes em todos os sistemas -> eles armazenam um grande número de informações importantes
+	- Devido à sua importante função, esses bancos devem possuir tecnologias de segurança para seus dados:
+		-- Backup: consiste em guardar versões antigas dos dados, para que possam ser restaurados em caso de perda;
+
+SGBD - Sistema Gerenciador de Banco de Dados
+	--> Organizam as informações nos bancos de dados, facilitando seu uso e manutenção;
+	--> ACL - É o controle de acesso (por usuário) às informações do banco;
+	--> Redundância - gerencia a redundância dos dados, utilizando o espaço da forma mais eficiente;
+	--> Integridade - garante a constância do funcionamento do banco, permitindo que os dados sejam acessados a qualquer momento;
+
+Modelos de bancos de dados
+	--> Cada modelo soluciona um problema diferente;
+		--> Encontrar o modelo ideal consiste em compreender seu problema e a melhor solução para ele;
+	--> Grafos: são ideias para mapear redes complexas; estabelecem relações (arestas) entre dados (pontos), formando uma rede;
+	--> Documental: são bancos de dados voltados para o armazenamento de informações complexas e bem variadas, como um extrato bancário;
+	--> Chave-valor: dicionários; são estruturas simples e utilizados em banco compactos com poucas informações; sua vantagem é ser extremamente rápidos;
+	--> Colunar e relacional: são modelos bem semelhantes: o primeiro organiza as informações apenas em colunas, o segundo, em linhas e colunas;
+	--> Série temporal: aqui, os dados são organizados em forma de data; esse modelo é considerado um pouco defasado, mas ainda eficiente;
